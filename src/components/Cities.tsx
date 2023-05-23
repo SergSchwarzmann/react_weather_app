@@ -19,7 +19,7 @@ function Cities() {
         <div className="cities">
             This is cities
             <ul>
-                <li><button onClick={() => askWeather([lat=50, lon=70])}>Temirtau</button></li>
+                <li><button onClick={() => askWeather({lat: 50, lon:70})}>Temirtau</button></li>
                 <li><button>Astana</button></li>
                 <li><button>Almaty</button></li>
                 <li><button>Moscow</button></li>
