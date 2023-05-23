@@ -1,0 +1,9 @@
+header {
+    background: black;
+    color: bisque;
+    height: 80px;
+    font-size: 3rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
