@@ -7,7 +7,7 @@ import Weather from "./Weather";
 
 
 
-function Interval(props) {
+function Interval({coords}) {
     const [interval, setInterval] = React.useState('one');
 
 
@@ -27,6 +27,7 @@ function Interval(props) {
             </div>
             <div>
             </div>
+            {coords.lat} {coords.lon}
         </div>
     );
 };
