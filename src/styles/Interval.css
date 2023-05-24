@@ -2,10 +2,11 @@
     margin: 0 5px;
     height: 100%;
     text-align: center;
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
     border: 2px solid black;
     border-radius: 5px;
     box-shadow: 5px 5px #888888;
 }
+

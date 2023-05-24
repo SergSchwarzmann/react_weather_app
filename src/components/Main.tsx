@@ -3,15 +3,36 @@ import * as React from 'react';
 import "../styles/Main.css";
 
 import Interval from "./Interval";
-import Cities from "./Cities";
 
-function Main () {
+
+
+function Main (props) {
+    // let [lat, setLat] = React.useState(0);
+    // let [lon, setLon] = React.useState(0);
+    let [coords, setCoords] = React.useState({});
+     
+    // const setCoords = (lat, lon) => {
+    //     setLat(lat);
+    //     setLon(lon);
+    // }
+    console.log(coords);
+    
     return (
-        <main>
+        <main >
             <div className="main-text">This is main</div>
             <div className="grid-item-container">
-                <Interval />
-                <Cities />
+                <div >
+                    <Interval />
+                </div>
+                <div className="cities">
+                    This is cities
+                    <ul>
+                        <li><button onClick={() => setCoords({lat: 50, lon: 70})}>Temirtau</button></li>
+                        <li><button onClick={() => setCoords({lat: 60, lon: 80})}>Astana</button></li>
+                        {/* <li><button onClick={() => setCoords(lat = 70, lon = 90)}>Almaty</button></li>
+                        <li><button onClick={() => setCoords(lat = 90, lon = 100)}>Moscow</button></li> */}
+                    </ul>
+                </div>
             </div>
         </main>
     )
