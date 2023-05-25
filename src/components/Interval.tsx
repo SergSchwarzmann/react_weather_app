@@ -21,13 +21,13 @@ function Interval({coords}) {
                 <Form.Radio label="Five days" checked={interval === 'five'} value="fiveDays" onClick={() => setInterval('five')} />
                 </Form.Group>
             </div>
-            <Weather />
             <div>
                 {interval === 'one' ? "One" : "Five" }
             </div>
             <div>
             </div>
             {coords.lat} {coords.lon}
+            <Weather coords={coords}/>
         </div>
     );
 };

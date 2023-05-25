@@ -5,7 +5,7 @@ import axios from 'axios';
 
 
 function City (props) {
-    const [cities, setCity] = React.useState([]);
+    
 
     
 
