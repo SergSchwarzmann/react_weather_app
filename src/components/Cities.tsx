@@ -8,36 +8,36 @@ import Interval from './Interval';
 
 
 
-function Cities() {
+// function Cities() {
     // let [coords, setCoords] = React.useState();
 
-    let [lat, setLat] = React.useState(0);
-    let [lon, setLon] = React.useState(0);
+    // let [lat, setLat] = React.useState(0);
+    // let [lon, setLon] = React.useState(0);
 
       
 
     // let lat = 0;
     // let lon = 0;
-    const setCoords = (lat, lon) => {
-        setLat(lat);
-        setLon(lon);
+    // const setCoords = (lat, lon) => {
+    //     setLat(lat);
+    //     setLon(lon);
         
-    }
-    console.log(lat, lon);
+    // }
+    // console.log(lat, lon);
 
-    return (
-        <div className="cities">
-            This is cities
-            
-            <ul>
-                <li><button onClick={() => setCoords(lat = 50, lon =70)}>Temirtau</button></li>
+    // return (
+    //     <div className="cities">
+    //         This is cities
+
+    //         <ul>
+                {/* <li><button onClick={() => setCoords(lat = 50, lon =70)}>Temirtau</button></li>
                 <li><button onClick={() => setCoords(lat = 60, lon = 80)}>Astana</button></li>
                 <li><button onClick={() => setCoords(lat = 70, lon = 90)}>Almaty</button></li>
-                <li><button onClick={() => setCoords(lat = 90, lon = 100)}>Moscow</button></li>
-            </ul>
-        </div>
-    );
-};
+                <li><button onClick={() => setCoords(lat = 90, lon = 100)}>Moscow</button></li> */}
+//             </ul>
+//         </div>
+//     );
+// };
 
 
-export default Cities;
+// export default Cities;
