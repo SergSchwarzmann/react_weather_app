@@ -5,7 +5,7 @@ import "../styles/Header.css";
 function Header() {
     return (
         <header>
-            This is header
+            Weather
         </header>
     )
 }
