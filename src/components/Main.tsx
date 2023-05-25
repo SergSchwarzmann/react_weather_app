@@ -2,17 +2,25 @@ import * as React from 'react';
 
 import "../styles/Main.css";
 
-import Interval from "./Interval";
-import Cities from "./Cities";
+import Cities from './Cities';
+import Weather from './Weather';
+
+
 
 function Main () {
+
+    const [latitude, setLatitude] = React.useState(null);
+    const [longitude, setLongitude] = React.useState(null);
+
+    const handleCitySelect = (selectedLatitude, selectedLongitude) => {
+    setLatitude(selectedLatitude);
+    setLongitude(selectedLongitude);
+    };
+
     return (
-        <main>
-            <div className="main-text">This is main</div>
-            <div className="grid-item-container">
-                <Interval />
-                <Cities />
-            </div>
+        <main >
+            <Cities onCitySelect={handleCitySelect}/>
+            <Weather latitude={latitude} longitude={longitude}/>
         </main>
     )
 };
